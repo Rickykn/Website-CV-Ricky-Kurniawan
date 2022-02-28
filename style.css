@@ -83,3 +83,55 @@ nav a:hover {
 .desc more {
   color: #95a5a6;
 }
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar {
+  position: relative;
+
+  border: 2px solid black;
+
+  border-radius: 20px;
+}
+.bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #2f2f2f;
+}
+
+.skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.html-bar {
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+.css-bar {
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+.javascript-bar {
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100% {
+    width: 80%;
+  }
+}
